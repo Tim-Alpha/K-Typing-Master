@@ -1,0 +1,96 @@
+body {
+    background-color: #eee;
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px;
+}
+button {
+    font-size: 25px;
+}
+h1 {
+    display: inline-block;
+    text-align: center;
+    font-size: x-large;
+    border: 2px solid black;
+}
+
+textarea {
+    padding: 10px;
+    font-family: monospace;
+    font-size: 30px;
+    height: 300px;
+}
+
+.selectDiv {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 200px;
+    text-align: center;
+    margin: 50px 10px;
+}
+
+.selectDiv p {
+    display: block;
+    cursor: pointer;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    /* margin: 50px auto; */
+}
+
+.battleContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 300px;
+}
+
+.mainresult {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.timeDiv {
+    position: fixed;
+    right: 0px;
+    margin: 100px 20px;
+}
+
+.resultDiv {
+    text-align: center;
+    border: 3px solid violet;
+    margin: 100px auto;
+    padding: 100px 150px;
+    border-radius: 20px;
+}
+
+#backspace {
+    color: red;
+}
+
+.form {
+    margin: auto;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+footer {
+    position: sticky;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    display: inline-block;
+}

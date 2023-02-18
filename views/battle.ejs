@@ -1,0 +1,37 @@
+<%- include('header') %>
+
+    <div class="mainContainer">
+        <div class="selectDiv">
+            <h1>Choose Your Chapter</h1>
+            <p onclick="chapterOne()">Chapter-1</p>
+            <p onclick="chapterTwo()">Chapter-2</p>
+            <p onclick="chapterThree()">Chapter-3</p>
+            <p onclick="chapterFour()">Chapter-4</p>
+            <!-- <p>Chapter-5</p>
+            <p>Chapter-6</p>
+            <p>Chapter-7</p>
+            <p>Chapter-8</p>
+            <p>Chapter-9</p>
+            <p>Chapter-10</p> -->
+        </div>
+
+        <div class="battleContainer">
+            <form class="form" method="post">
+                <div>
+                    <textarea name="question" id="myQuestion" cols="20" rows="23" placeholder=' Paste your question here ...
+                    or 
+ Choose from the chapter at the left ... '></textarea>
+                </div>
+                <div>
+                    <textarea id="ans" name="answer" id="" cols="20" rows="23"
+                        placeholder="Start typing here ..."></textarea>
+                </div>
+                <div>
+                    <button type="submit" onclick="submitResult()">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <%- include('footer') %>

@@ -1,0 +1,23 @@
+<%- include('header') %>
+
+    
+    <div class="mainresult">
+        <div class="resultDiv">
+            <h2>Result</h2>
+            <p>Total Words</p>
+            <p><%= TotalWords %></p>
+            <p>Correct Typed Words</p>
+            <p><%= Correct %></p>
+            <p>Wrong Typed Words</p>
+            <p><%= Wrong %></p>
+            <!-- <p>Time taken</p>
+            <p>00:00:00</p> -->
+            <p>Accuracy</p>
+            <p><%= Accuracy %> %</p>
+            <p>BACKSPACE COUNT</p>
+            <p id="backspace"></p>
+            <button><a href="/">Back to home</a></button>
+        </div>
+    </div>
+
+    <%- include('footer') %>

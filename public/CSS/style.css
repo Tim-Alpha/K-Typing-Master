@@ -6,6 +6,7 @@ body {
 }
 button {
     font-size: 25px;
+    margin-top: 10px;
 }
 h1 {
     display: inline-block;
@@ -61,6 +62,8 @@ textarea {
     position: fixed;
     right: 0px;
     margin: 100px 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .resultDiv {

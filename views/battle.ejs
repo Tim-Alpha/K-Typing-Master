@@ -16,20 +16,26 @@
         </div>
 
         <div class="battleContainer">
-            <form class="form" method="post">
+            <form class="form" action="/" name="timeout" method="post">
                 <div>
                     <textarea name="question" id="myQuestion" cols="20" rows="23" placeholder=' Paste your question here ...
                     or 
  Choose from the chapter at the left ... '></textarea>
                 </div>
                 <div>
-                    <textarea id="ans" name="answer" id="" cols="20" rows="23"
+                    <textarea  onclick="startTest()" id="ans" name="answer" id="" cols="20" rows="23"
                         placeholder="Start typing here ..."></textarea>
                 </div>
                 <div>
                     <button type="submit" onclick="submitResult()">Submit</button>
                 </div>
             </form>
+        </div>
+        <div class="timeDiv">
+            <p>Timer</p>
+            <p id="Timer"></p>
+            <!-- <button onclick="setYourTimer()">Set Timer</button> -->
+            <!-- <button onclick="startTest()">Start Test</button> -->
         </div>
     </div>
 

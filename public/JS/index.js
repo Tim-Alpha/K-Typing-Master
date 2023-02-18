@@ -1,27 +1,54 @@
-// var ans = document.getElementById("ans");
-// input.addEventListener('keydown', function(event) {
-//     const key = event.key; // const {key} = event; ES6+
-//     if (key === "Backspace" || key === "Delete") {
-//         return false;
-//     }
-// });
+
 // document.addEventListener('keypress', function (e) {
 //     console.log(e.key);
+
 // });
-// const count = 0;
+// const backspaceCount = 0;
 // document.addEventListener('keyup', function (e) {
 //     if (e.key === 'Backspace') {
-//         // count +=1;
+//         backspaceCount += 1;
 //         console.log(e.key);
 //     }
 //     // console.log(e.key);
 // });
+const result = 0;
 
-// function submitResult(){
-//     document.getElementById('').innerText=count;
+let counter = 15 * 60;
+let minutes = (counter / 60) - 1;
+let seconds = 60;
+// function setYourTimer(counter) {
+//     counter = prompt("Please enter time in minutes.");
+//     alert(counter);
 // }
-alert(" Welcome to khudka typing master by Sachin.");
-alert("--------Warning--------\nPlease don'nt use ENTER key while typing.");
+function startTest() {
+    // alert(counter + " -- " + minutes + " -- " + seconds);
+    const SartTest = () => {
+
+        document.getElementById('Timer').innerText = minutes + ':' + seconds;
+        if (seconds === 0) {
+            if (minutes === 0 && seconds === 0) {
+                clearInterval(submitTest);
+                alert("Hey! 😉buddy you reach the limit👎.");
+                // result = 0;
+                // document.getElementById("timeout").submit();
+                
+            }
+            minutes = minutes - 1;
+            seconds = 60;
+        }
+        seconds -= 1;
+    };
+    var submitTest = setInterval(SartTest, 1000);
+
+};
+
+// function submitResult() {
+//     result = hours+":"+seconds;
+//     document.getElementById('timeLeft').innerText = result;
+// }
+
+// alert(" Welcome to khudka typing master by Sachin.");
+// alert("--------Warning--------\nPlease don'nt use ENTER key while typing.");
 document.getElementById('backspace').innerText = "Backspace count data is not abilable now we will update this in next update";
 
 function chapterOne() {
